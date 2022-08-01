@@ -1,0 +1,56 @@
+@import "./../../assets/palette";
+@import "./../../assets/devices";
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    background-color: $color-three;
+}
+
+.title {
+    color: $color-one;
+    font-size: 500%;
+    @include sm {
+        font-size: 300%;
+        text-align: center;
+    }
+}
+
+.desc {
+    color: whitesmoke;
+    font-size: 200%;
+    padding-top: 40px;
+    @include sm {
+        font-size: 150%;
+        text-align: center;
+    }
+}
+
+.bar {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input {
+    height: 40px;
+    width: 450px;
+    border-radius: 50px;
+    font-size: 120%;
+    text-align: center;
+    margin-bottom: 20px;
+    @include sm {
+        width: 330px;
+    }
+}
+
+.btn {
+    height: 40px;
+    width: 200px;
+    border-radius: 50px;
+    background-color: $color-one;
+    color: whitesmoke;
+    font-size: 170%;
+}

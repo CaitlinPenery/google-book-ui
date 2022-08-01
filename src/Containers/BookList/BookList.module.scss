@@ -1,0 +1,13 @@
+@import "./../../assets/palette";
+@import "./../../assets/devices";
+.grid {
+    background-color: $color-three;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 60px;
+    opacity: 80%;
+    @include sm {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}

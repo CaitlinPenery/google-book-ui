@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import BookList from "./Containers/BookList/BookList";
+import SearchBar from "./Components/SearchBar";
+import classes from "./App.module.scss";
+import { useState, useEffect } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const [search, setSearch] = useState("");
+    const [books, setBook] = useState([]);
+
+    const getBook = async (newSearchBook) => {
+        const url = "https://www.googleapis.com/books/v1/volumes?q=";
+        const response = await fetch(
+            `${url}${newSearchBook}${"&maxResults=16"}`
+        );
+        const bookdata = await response.json();
+        setBook(bookdata.items);
+    };
+    const handleSubmit = (search) => {
+        setSearch(search);
+    };
+    useEffect(() => {
+        if (search !== "" || undefined) {
+            getBook(search);
+        }
+    }, [search]);
+    return (
+        <div className={classes.App}>
+            <SearchBar onSubmit={handleSubmit} setSearch={setSearch} />
+            <BookList books={books} />
+        </div>
+    );
+};
 
 export default App;
