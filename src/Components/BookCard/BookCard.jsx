@@ -1,5 +1,7 @@
 import classes from "./BookCard.module.scss";
 
+// assigning fetched data with checks
+
 const BookCard = ({ book }) => {
     const image =
         book.volumeInfo.imageLinks && book.volumeInfo.imageLinks.thumbnail

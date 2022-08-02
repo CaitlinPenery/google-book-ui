@@ -63,10 +63,15 @@ Application Design (required):
 
 # ToDo
 
--   [ ] Add the option of different search params (author, isbn, desc).
+-   [ ] Add the option of different search params (author, isbn, desc)
 -   [ ] Buttons
     -   Load more
     -   Clear search
     -   Expand content
 -   [ ] Expanded content card
--   [ ] include an image when no image found.
+-   [ ] include an image when no image found
+-   [ ] Add loading image
+-   [ ] Render list of 4 most popular books to be removed when input value
+-   [ ] Add tablet sizing to device mixin
+-   [ ] Find solution for setPointCapture on smaller devices
+-   [ ] Convert useState to useSearchParams for search bar

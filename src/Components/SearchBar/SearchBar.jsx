@@ -2,14 +2,14 @@ import { useState } from "react";
 import classes from "./SearchBar.module.scss";
 
 const SearchBar = ({ initialValue = "", onSubmit }) => {
+    // Update the value in searchbar
     const [internal, setInternal] = useState(initialValue);
 
     const handleChange = (e) => setInternal(e.target.value);
     const handleSubmit = (e) => {
         e.preventDefault();
+        // calling function from App.jsx to set search value
         onSubmit(internal);
-        // Clearing text input(add searchTerm to BookList first)
-        // setInternal("");
     };
     return (
         <div className={classes.header}>

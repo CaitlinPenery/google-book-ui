@@ -1,6 +1,6 @@
 import classes from "./BookList.module.scss";
 import BookCard from "../../Components/BookCard/BookCard";
-
+// Rendering Cards using map iteration
 const BookList = ({ books }) => {
     return (
         <div className={classes.grid}>
