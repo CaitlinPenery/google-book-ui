@@ -14,3 +14,17 @@
         padding: 10px;
     }
 }
+
+.noBooks {
+    display: flex;
+    justify-content: center;
+    background-color: $color-three;
+    padding: 60px;
+    opacity: 80%;
+    height: auto;
+    min-height: 60vh;
+    font-size: 200%;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}

@@ -75,3 +75,4 @@ Application Design (required):
 -   [ ] Add tablet sizing to device mixin
 -   [ ] Find solution for setPointCapture on smaller devices
 -   [ ] Convert useState to useSearchParams for search bar
+-   [x] Handle no books being returned

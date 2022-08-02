@@ -30,7 +30,7 @@ const App = () => {
         <div className={classes.App}>
             {/* Sending to children */}
             <SearchBar onSubmit={handleSubmit} setSearch={setSearch} />
-            <BookList books={books} />
+            <BookList books={books} search={search} />
         </div>
     );
 };
