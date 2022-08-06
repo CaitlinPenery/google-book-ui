@@ -6,7 +6,7 @@ const BookCard = ({ book }) => {
     const image =
         book.volumeInfo.imageLinks && book.volumeInfo.imageLinks.thumbnail
             ? book.volumeInfo.imageLinks && book.volumeInfo.imageLinks.thumbnail
-            : "Cover not available";
+            : "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg";
     const title = book.volumeInfo.title ? book.volumeInfo.title : "No Title";
     const authors = book.volumeInfo.authors
         ? book.volumeInfo.authors.join(", ")

@@ -1,11 +1,15 @@
 # Google Books API Search Engine
 
-### \_**[Launch the Live Site]()**\_e
+### _**[Launch the Live Site](https://caitlinpenery.github.io/google-book-ui/)**_
 
 ## Description
 
 This project will require you to use both DOM manipulation and Asynchronous programming.
 The aim is for the user to be able to search for a book inside the Google Books database and to be able to get more details about a certain title.
+
+## Screenshot
+
+<img src="images\Screenshot 2022-08-06 161049.png" width=100>
 
 ## Implementation
 
